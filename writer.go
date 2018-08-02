@@ -41,7 +41,7 @@ func NewWriter(path string, options *RecordWriterOptions) (*RecordWriter, error)
 }
 
 func (rw *RecordWriter) WriteRecord(data []byte) error {
-	e, err := newEntry(data)
+	e, err := NewEntry(data)
 	if err != nil {
 		return err
 	}
