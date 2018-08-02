@@ -44,7 +44,7 @@ type recordEntry struct {
 	dataCrc   uint32
 }
 
-func newEntry(data []byte) (*recordEntry, error) {
+func NewEntry(data []byte) (*recordEntry, error) {
 	length := uint64(len(data))
 	if length == 0 {
 		return nil, errors.New("data array is empty")
