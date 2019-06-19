@@ -7,7 +7,7 @@ import (
 	"github.com/golang/protobuf/proto"
 
 	// Import the "example" and "feature" protocol buffers
-	tf "tensorflow/core/example"
+	tf "github.com/peroxyacyl/tfutils/tensorflow/core/example"
 )
 
 // GetFeatureFromGoType returns a tensorflow Feature instance for the
